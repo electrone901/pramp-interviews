@@ -15,7 +15,12 @@ Analyze the time and space complexities of your solution.
 Note: it’s called pancake sort because it resembles sorting pancakes on a plate with a spatula, where you can only use the spatula to flip some of the top pancakes in the plate. To read more about the problem, see the Pancake Sorting Wikipedia page.
 
     PSEUDO CODE:
-        - 
+        - loop from the end up to 1 
+        - getMaxIdx val, call flip(ar, maxIdx)
+                ex input: [1, 5, 4, 3, 2]
+                maxIdx = 5
+                first time call flip: [5,1,4,3,2]
+        - call again flip(ar, i) output: [5,1,4,3,2] => [2,3,4,1,5]
 *  */
 
 function pancakeSort(ar) {
@@ -46,3 +51,4 @@ function flip(ar, i) {
     return ar;
 }
 pancakeSort([1, 5, 4, 3, 2]); //output: [1, 2, 3, 4, 5]
+
