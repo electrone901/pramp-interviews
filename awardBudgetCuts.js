@@ -51,4 +51,3 @@ function awardBudgetCuts(ar, budget) {
 }
 awardBudgetCuts([2, 100, 50, 120, 1000], 190);//output: 47 
 
-
